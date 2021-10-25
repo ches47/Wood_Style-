@@ -1,1 +1,1 @@
-<p><img src="https://www.istockphoto.com/photo/young-carpenter-using-sander-while-working-on-a-piece-of-wood-gm1061173208-283670730?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fwood-design&utm_term=wood%20design%3A%3Asearch-aggressive-affiliates-v1%3Aa" alt="WoodStyle"></p>
+<p><img src="https://images.unsplash.com/photo-1515446134809-993c501ca304?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="WoodStyle"></p>
