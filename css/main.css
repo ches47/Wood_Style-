@@ -17,7 +17,6 @@
 	--userfont: raleway-ws, sans-serif;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 	--radius: 5px;
-	--radius-style: 0.5px;
 	--transition: .25s ease-out;
 }
 
@@ -64,8 +63,7 @@ body {
 	position: absolute;
 	top: 0;
 	z-index: 1000;
-	color: rgb(233, 233, 233);
-	padding: 40px 0 27px;
+	padding: 43px 0 20px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	left: 50px;
 	right: 50px;
@@ -117,13 +115,92 @@ body {
 	color: #fff;
 }
 
+.top-menu {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
 
+.top-menu__item {
+	padding: 0;
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 5px;
+}
 
+.top-menu__link {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 7px 16px;
+	border-bottom-left-radius: 7px;
+	border-top-right-radius: 7px;
+	transition: background var(--transition);
+}
 
+.top-menu__link:hover,
+.top-menu__link:focus, 
+span.top-menu__link {
+	color: #fff;
+	background-color: rgba(196, 196, 196, 0.2);
+}
 
+.menu-container{
+	position: relative;
+}
 
+.menu-toggle {
+	width: 22px;
+	height: 22px;
+	background-image: url(../images/navbar/burger_menu-white.svg);
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	top: 3px;
+	display: none;	
+	right: 0;
+}
 
+.menu-toggle_active {
+	background-image: url(../images/navbar/close.svg);
+}
 
+.top-menu.top-menu_active {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity var(--transition), visibility var(--transition);
+}
+
+.nav-social-wrap {
+	text-align: right;
+}
+
+.nav-social {
+	background-color: rgba(196, 196, 196, 0.2);
+	border-radius: 10em;
+	display: inline-block;
+	padding: 2px 11px 5px;
+}
+
+.nav-social__item{
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.nav-social__item img {
+	width: 100%;
+	max-height: 16.5px;
+	max-width: 20px;
+	opacity: 0.75;
+	transition: opacity var(--transition);
+}
+
+.nav-social__item:hover img { 
+	opacity: 1;
+}
 
 /* SLIDER */
 .home-slider {
