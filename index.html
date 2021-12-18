@@ -16,9 +16,10 @@
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<!--micromodal --> 
+	<link rel="stylesheet" href="./css/micromodal.css">
 	<!-- swiper -->
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
 	<!-- stylesheet -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -26,7 +27,7 @@
 
 <body>	
 
-	<!-- <div class="navbar">
+	<div class="navbar">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-6">
@@ -53,9 +54,9 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div> 
 
-	<!-- <div class="home-slider">
+	<div class="home-slider">
 
 		<div class="swiper-wrapper">
 
@@ -95,13 +96,13 @@
 			</div>
 		</div>
 
-  	</div> -->
+  	</div>
 
 	<section class="home-callback">
 		<div class="container">
 			<div class="row">
 
-				<div class="col-xl-8">
+				<div class="col-xl-8 col-lg-6">
 					<h3 class="home-callback__header">нам доверяют </h3>
 					<ul class="home-callback__list">
 						<li>790 клиентов по всему миру</li>
@@ -115,21 +116,45 @@
 					</ul>
 				</div>
 
-				<div class="col-xl-4 home-callback__text-right">
+				<div class="col-xl-4 col-lg-6 home-callback__text-right">
 					<p>Позвоните нам или оставьте заявку с сайте.<br>Мы перезвоним вам в течении 30 минут</p>
-					<a href="tel: +38077-77-77-777" class="phone-big home-callback__phone" title="Позвонить...">+38077-77-77-777</a>
-					<button class="button home-callback__button">оформить заявку сейчас</button>
+					<a href="tel: +38077-77-77-777" class="phone-big home-callback__phone" title="Позвонить...">+38(063)77-77-777</a>
+					<button class="button home-callback__button" data-custom-open="modal" data-form="Форма секции Нам доверяют">оформить заявку сейчас</button>
 				</div>
 
 			</div>
 		</div>
 	</section>  
 
+	<!-- micromodal  -->
+		<div class="modal micromodal-slide" id="modal">
+			<div class="modal__overlay" data-custom-close>
+				<div class="modal__container">
+					<header class="modal__header">
+						<h2 class="modal__title">Оформить заявку</h2>
+						<button class="modal__close" title="Закрыть" data-custom-close></button>
+					</header>
+
+					<form>
+						<input type="text" name="Имя" placeholder="Ваше имя...">
+						<input type="tel" name="Телефон" placeholder="Ваш телефон...">
+						<textarea name="Комментарий" rows="4" placeholder="Комментарий..."></textarea>
+						<input type="hidden" name="form">
+						<div class="modal__footer">
+							<button class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 
 	<!-- jquery -->
 	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
 	<!-- swiper -->
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+	<!-- micromodal -->
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	<!-- JS_main -->
 	<script src="js/common.js"></script>
 </body>
