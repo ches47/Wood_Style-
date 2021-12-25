@@ -74,11 +74,27 @@
     .home-callback__phone {
         display: block;
     }
+    .best-item__desc {
+        font-size: 20px;        
+    }
+    .best-works__item-wrapper {
+        margin-top: 16px;
+    }
+    .best-item__desc {
+        padding-top: 40px;
+    }
 }
 
 /* sm <= Medium (md) */
 @media (max-width : 768px) {
-
+    .best-works__left {
+        display: none;
+    }
+    .best-works__right { 
+        flex: 1px;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* xs <= Small (sm) */
