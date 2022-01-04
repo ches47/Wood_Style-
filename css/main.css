@@ -530,6 +530,23 @@ form input, form textarea {
 	margin-top: 5px;
 	font-weight: 800;	
 }
+.section-title__paragraph{
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+.section-title--dotted .section-title__desc {
+	margin-bottom: 25px;
+}
+.section-title--dotted .section-title__desc::after {
+	content: '';
+	display: block;
+	height: 5px;
+	width: 35px;
+	background-image: url(../images/icons_src/dottes_group.svg);
+	background-repeat: repeat-x;
+	margin-top: 25px;
+}
 
 /* PORTFOLIO ITEM */
 .best-item {
@@ -621,6 +638,9 @@ form input, form textarea {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
+.advantages__item-wrapper {
+	margin-bottom: 40px;
+}
 .address-line::before {
 	content: '';
 	display: inline-block;
@@ -634,5 +654,117 @@ form input, form textarea {
 	top: 1.4px;
 }
 
-dsd  dsd
+/* ADVANTAGES */
+.advantages {
+	padding: 80px 0 50px;
 
+}
+.advantages-slider-wrapper {
+	text-align: center;
+}
+.advantages-slider {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	max-width: 440px;
+}
+.advantages-slider img {
+	width: 100%;
+	border-radius: var(--radius);
+}
+.advantages-slider::before {
+	content: '';
+	width: 50%;
+	height: 50%;
+	top: -15px;
+	left: -15px;
+	background-color: var(--dark);
+	position: absolute;
+	border-radius: var(--radius);
+	opacity: 0.1;
+}
+.advantages-slider__caption {
+	position: absolute;
+	bottom: 60px;
+	color: #fff;
+	right: -25px;
+	padding: 2px 50px 2px 25px;
+	border-radius: var(--radius);
+	font-family: roboto-wt, serif;
+	font-weight: 700;
+	font-size: 52px;
+	z-index: 1;
+	overflow: hidden;
+}
+.advantages-slider__caption::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: var(--dark);
+	opacity: 0.9;
+	z-index: -1;
+}
+.advantages-slider__caption span {
+	font-size: 20px;
+	font-family: relaway-wt, serif;
+	font-weight: 300;
+	max-width: 100px;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: left;
+	padding-left: 17px;
+}
+
+
+/* ITEM ADVANTAGES */
+.item-advantages {
+	height: 100%;
+	position: relative;
+	padding-bottom: 35px;
+}
+.item-advantages__heading {
+	text-decoration: none;
+	color: var(--text);
+	font-size: 19px;
+	font-weight: 800;
+	line-height: 1.2;
+	border-bottom: 1px solid var(--light-div);
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px; 
+}
+.item-advantages__heading:hover,
+.item-advantages__heading:active {
+	color: var(--text);
+	text-decoration: underline;
+}
+.item-advantages__heading img {
+	max-width: 70px;
+	max-height: 48px;
+	margin-right: 15px;
+}
+.item-advantages__desc {
+	margin: 0;
+	margin-top: 15px;
+}
+.item-advantages__more {
+	position: absolute;
+	bottom: 0;
+}
+.item-advantages__desc:hover {
+	color: #555;
+}
+
+/* READ MORE LINK */
+.read-more {
+	font-size: 15px;
+	font-weight: 800;
+	text-decoration: underline;
+	color: var(--text);
+}
+.read-more:hover {
+	color: #555;
+}

@@ -22,20 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		let text = $(this).text().split(' '),
 			first = text.shift()
 		$(this).html(`${first} <br><span>${text.join(' ')}</span>`)	
-	})
+	});
 
 	//Menu
 	function toggleMenu() {
 		$('.menu-toggle').toggleClass('menu-toggle_active');
 		$('.top-menu').toggleClass('top-menu_active');
-	}
+	};
 
 	$('.menu-toggle').click(function() { toggleMenu() })
 
 	function closeMenu() {
 		$('.menu-toggle').removeClass('menu-toggle_active');
 		$('.top-menu').removeClass('top-menu_active');
-	}
+	};
 
 	$(document).click(function(e) {
 		if($(e.target).closest('.menu-container').length) return
@@ -71,9 +71,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		runCallbacksOnInit: true
 	});
 
+	//Advantages Slider
+	const ADAVANTAGES_SLIDER = new Swiper('.advantages-slider', {
+		effect: 'fade',
+		speed: 1400,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: false,
+		}
+	});
+
+
 	//Callbask list numbers
 	$('.home-callback__list li').each(function() {
 		$(this).html($(this).text().replace(/([0-9]+)/g, '<span>$1</span>'))
-	})
+	});
 
 })
